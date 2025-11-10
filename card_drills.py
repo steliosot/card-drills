@@ -25,10 +25,10 @@ Currently included:
 
 Modes:
 
-- **Manual drills** – you click *New question* when ready.
-- **Auto drills** – timed practice with **Start / Stop / New session**.
+- **Manual drills** – you click *New question* when ready.  
+- **Auto drills** – timed, hands-free practice with *Start / Stop / New session*.  
+- **Mixed drills** – combines both directions (Number ↔ Card) randomly.
 
-Each stack lives in its own Python file (e.g. `mnemonica.py`, `aronson.py`).
 """
     )
 
