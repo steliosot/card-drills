@@ -48,7 +48,7 @@ with st.sidebar:
             ss.page = "mn_auto"
 
     st.markdown("---")
-    st.caption("More stacks (Aronson, Bart Harding, etc.) can be added as new files later.")
+    st.caption("More stacks are about to come...")
 
 
 # =============== ROUTING ===============
