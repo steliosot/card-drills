@@ -1,5 +1,11 @@
 # card_drills.py
 import streamlit as st
+# from mnemonica import (
+#     render_manual as mn_render_manual,
+#     render_auto as mn_render_auto,
+#     render_flashcards as mn_render_flashcards,  # NEW
+# )
+
 
 # mnemonica.py
 import random
@@ -136,7 +142,7 @@ def _render_position_card(position: int):
     _render_card_box(html, title="Position")
 
 # ===================== MANUAL DRILLS =====================
-def render_manual():
+def mn_render_manual():
     ss = st.session_state
 
     # Per-mode state (manual)
@@ -417,7 +423,7 @@ def _manual_mixed(ss):
 
 
 # ===================== AUTO DRILLS (THINK ONLY) =====================
-def render_auto():
+def mn_render_auto():
     ss = st.session_state
 
     # Auto state
@@ -683,7 +689,7 @@ def _auto_mixed(ss):
 
     rerun()
 
-def render_flashcards():
+def mn_render_flashcards():
     ss = st.session_state
 
     # Flashcards state
@@ -855,8 +861,6 @@ def _stack_view():
         st.write("Top of deck = position 1")
         for i, card in enumerate(MNEMONICA, start=1):
             st.markdown(f"{i:2d}: {format_card(card)}", unsafe_allow_html=True)
-
-
 
 
 st.set_page_config(
